@@ -6,7 +6,8 @@ A PowerShell script to uninstall and reinstall the latest stable version of Pyth
 
 ## Usage
 
-1. Save the PowerShell script as `PythonReset.ps1` in your desired folder.
-2. Open PowerShell with administrator privileges.
-3. Navigate to the folder where you saved the `PythonReset.ps1` script.
-4. Run the script by typing `.\PythonReset.ps1` and pressing Enter.
+1. Open PowerShell with administrator privileges.
+2. Copy and paste the following one-liner into the PowerShell window and press Enter:
+
+```powershell
+iwr -Uri "https://raw.githubusercontent.com/Honkware/python-reset/main/PythonReset.ps1" -OutFile "PythonReset.ps1"; .\PythonReset.ps1; Remove-Item "PythonReset.ps1"
