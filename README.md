@@ -11,3 +11,5 @@ A PowerShell script to uninstall all instances of Python on Windows.
 
 ```powershell
 iwr -Uri "https://raw.githubusercontent.com/Honkware/python-reset/main/PythonReset.ps1" -OutFile "PythonReset.ps1"; .\PythonReset.ps1; Remove-Item "PythonReset.ps1"
+
+Note: Don't use this, this is a bad idea.
