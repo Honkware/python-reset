@@ -1,6 +1,6 @@
 # Python Reset
 
-A PowerShell script to uninstall and reinstall the latest stable version of Python on Windows.
+A PowerShell script to uninstall all instances of Python on Windows.
 
 **⚠️ Warning: This method might not be foolproof and could potentially remove other programs that have "Python" in their names. It's recommended to double-check the list of programs before proceeding.**
 
