@@ -6,8 +6,7 @@ A PowerShell script to uninstall and reinstall the latest stable version of Pyth
 
 ## Usage
 
-1. Open PowerShell with administrator privileges.
-2. Copy and paste the following one-liner into the PowerShell window and press Enter:
-
-```powershell
-Get-WmiObject -Class Win32_Product | Where-Object { $_.Name -match "Python" } | ForEach-Object { $_.Uninstall() }; iwr -Uri "https://www.python.org/downloads/windows/" -OutFile "python-page.html"; $url = (Select-String -Path "python-page.html" -Pattern 'https:\/\/www\.python\.org\/ftp\/python\/\d+\.\d+\.\d+\/python-\d+\.\d+\.\d+-amd64\.exe' -AllMatches).Matches[0].Value; iwr -Uri $url -OutFile "python-installer.exe"; Start-Process -FilePath "python-installer.exe" -ArgumentList "/passive InstallAllUsers=1 PrependPath=1" -Wait; Remove-Item "python-installer.exe"; Remove-Item "python-page.html"
+1. Save the PowerShell script as `PythonReset.ps1` in your desired folder.
+2. Open PowerShell with administrator privileges.
+3. Navigate to the folder where you saved the `PythonReset.ps1` script.
+4. Run the script by typing `.\PythonReset.ps1` and pressing Enter.
